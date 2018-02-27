@@ -58,7 +58,9 @@ last(names, function(lastName){
 });
 // Do not edit the code above.
 
-
+function last(arr,cb){
+  cb(arr[arr.length-1])
+}
 
 ////////// PROBLEM 3 //////////
 
