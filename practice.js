@@ -37,7 +37,9 @@ first(names, function(firstName){
   return firstName;
 });
 // Do not edit the code above.
-
+function first(array,cb){
+  cb(array[0]);
+}
 
 
 ////////// PROBLEM 2 //////////
