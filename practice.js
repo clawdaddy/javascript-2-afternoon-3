@@ -150,7 +150,11 @@ uniq(names, function(uniqArr){
 */
 
 //Code Here 
-
+function each (names,cb){
+  for (i=0;i<names.length;i++){
+    cb(names[i],i);
+  }
+}
 // Do not edit the code below.
 each(names, function(item, indice){
   console.log('The item in the ' + indice + ' position is ' + item)
