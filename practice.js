@@ -92,7 +92,7 @@ multiply(4, 3, function(answer){
 
 //Code Here 
 function contains(arr,name,cb){
-  for (i=0;i<arr.length;i++){
+  for (let i=0;i<arr.length;i++){
     if (arr[i]===name){
       cb(true);
     }
@@ -134,6 +134,18 @@ function uniq(array,cb){
   }
   cb(array);
 }
+// function uniq(array,cb){
+  //var uniqueArray=[];
+  //for (let i=0;i<array.length;i++){
+    //if (!uniqueArray.includes(array[i])){
+      //uniqueArray.push(array[i])
+    //}
+  //}
+//}
+/* the common way to do the above problem would be to have one loop 
+going backwards, then the second loop going forwards
+*/
+
 // Do not edit the code below.
 uniq(names, function(uniqArr){
   console.log('The new names array with all the duplicate items removed is ', uniqArr);
@@ -151,7 +163,7 @@ uniq(names, function(uniqArr){
 
 //Code Here 
 function each (names,cb){
-  for (i=0;i<names.length;i++){
+  for (let i=0;i<names.length;i++){
     cb(names[i],i);
   }
 }
@@ -172,7 +184,7 @@ each(names, function(item, indice){
 
 // Code here
 function getUserById(users,id,cb){
-  for (i=0;i<users.length;i++){
+  for (let i=0;i<users.length;i++){
     if(users[i]["id"]===id){
       cb(users[i]);
     }
